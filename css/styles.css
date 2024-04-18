@@ -2,6 +2,23 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
+  margin: 0;
+  line-height: 1.5;
+  width: 1440px;
+  height: 3300px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
 a {
   text-decoration: none;
@@ -9,6 +26,8 @@ a {
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -18,6 +37,7 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding-left: 156px;
 }
 .logo-part {
   color: #2e2f42;
@@ -29,8 +49,12 @@ ol {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.address {
+.address-headera {
   font-style: normal;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-left: 332px;
 }
 .address-contact {
   font-size: 16px;
@@ -46,6 +70,9 @@ ol {
 }
 .hero {
   background: #2e2f42;
+  width: 1440px;
+  height: 600px;
+  padding: 188px 472px 292px 472px;
 }
 .title {
   font-weight: 700;
@@ -54,6 +81,8 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  width: 496px;
+  margin-bottom: 48px;
 }
 .main-button {
   background: #4d5ae5;
@@ -64,10 +93,15 @@ ol {
   color: #fff;
   text-align: center;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 0px;
+  width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  display: block;
 }
 .main-button:hover,
 .main-button:focus {
-  
   background: #404bbf;
 }
 .title-list {
@@ -76,11 +110,13 @@ ol {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .title-list-discription {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
+  width: 264px;
 }
 .logo-ourteam {
   font-weight: 700;
@@ -90,16 +126,27 @@ ol {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
+  padding-top: 120px;
 }
 .characters-developers {
   background: #f4f4fd;
 }
 .character-fon {
   background: #fff;
+  border-radius: 0 0 4px 4px;
+  width: 264px;
+  height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-
+.container-character-developers {
+  width: 1440px;
+  height: 732px;
+}
 .img-character {
   background: #fff;
+  margin-bottom: 32px;
 }
 .character-name {
   font-weight: 500;
@@ -108,8 +155,8 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   text-align: center;
+  margin-bottom: 8px;
 }
 .character-post {
   font-size: 16px;
@@ -117,6 +164,15 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
 }
+.character-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+  max-width: 1128px;
+}
+
 .title-portfolio {
   font-weight: 700;
   font-size: 36px;
@@ -127,7 +183,10 @@ ol {
   text-transform: capitalize;
 }
 .portfolio-fon {
-  background: #fff;
+  border: 1px solid #e7e9fc;
+  width: 360px;
+  height: 420px;
+  object-fit: cover;
 }
 .name-portfolio {
   font-weight: 500;
@@ -142,9 +201,19 @@ ol {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.foooter {
-  background: #2e2f42;
+.container-portfolio {
+  width: 1128px;
+  height: 1000px;
+  margin: 120px auto;
 }
+.portfolio-ul {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 24px;
+  flex-direction: row-reverse;
+  margin-top: 72px;
+}
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -162,4 +231,44 @@ ol {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
+  margin-top: 16px;
+}
+.hero-contant {
+  width: 496px;
+  margin: 0 auto;
+}
+.container-header {
+  height: 72px;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: row;
+}
+.nav-header {
+  display: flex;
+}
+.flex-headera {
+  padding-left: 76px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.container-under-hero {
+  margin: 120px auto;
+  max-width: 1128px;
+  display: flex;
+  gap: 24px;
+}
+.cont-portfolio-disc {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
+}
+.footer {
+  background: #2e2f42;
+  padding: 100px 1020px 100px 156px;
+  max-width: 100%;
 }
