@@ -121,8 +121,19 @@ ol {
 .main-button:focus {
   background: #404bbf;
 }
-.skiptitle {
-  visibility: hidden;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .title-list {
   font-weight: 500;
@@ -154,7 +165,6 @@ ol {
 .characters-developers {
   background: #f4f4fd;
   padding: 120px 0;
-
 }
 .character-fon {
   background: #fff;
@@ -164,7 +174,6 @@ ol {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-
 
 .character-name {
   font-weight: 500;
@@ -176,7 +185,7 @@ ol {
   text-align: center;
   margin-bottom: 8px;
 }
-.name-post{
+.name-post {
   padding: 32px 0;
 }
 .character-post {
@@ -259,10 +268,10 @@ ol {
   display: flex;
   gap: 24px;
 }
-.section-discrip{
+.section-discrip {
   padding: 120px 0;
 }
- 
+
 .cont-portfolio-disc {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
