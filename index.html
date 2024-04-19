@@ -21,7 +21,7 @@
   </head>
   <body>
     <header class="content-headera">
-      <div class="container-header">
+      <div class="container header-container">
         <nav class="nav-header">
           <a class="logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
@@ -32,7 +32,7 @@
             <li><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <address>
+        <address class="teg-address">
           <ul class="address-headera">
             <li>
               <a class="address-contact" href="mailto:info@devstudio.com"
@@ -51,37 +51,38 @@
     <main>
       <!-- Сама велика частина з кнопкою #section-->
       <section class="hero">
-        <div class="hero-contant">
+        <div class="container hero-contant">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button class="main-button" type="button">Order Service</button>
         </div>
       </section>
       <!-- 4 пункта #2section -->
       <section>
-        <h2 hidden>Advantage(semastika)</h2>
+        <div class="container content-discription">
+        <h2 class="">Advantage(semastika)</h2>
         <ul class="container-under-hero">
-          <li>
+          <li class="ul-items">
             <h3 class="title-list">Strategy</h3>
             <p class="title-list-discription">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="ul-items">
             <h3 class="title-list">Punctuality</h3>
             <p class="title-list-discription">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="ul-items">
             <h3 class="title-list">Diligence</h3>
             <p class="title-list-discription">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="ul-items">
             <h3 class="title-list">Technologies</h3>
             <p class="title-list-discription">
               Design practice focused on digital experiences. We bring forth a
@@ -89,11 +90,12 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!-- #3 4Divelopera IMG -->
 
       <section class="characters-developers">
-        <div class="container-character-developers">
+        <div class="container container-character-developers">
           <h2 class="logo-ourteam">Our Team</h2>
           <ul class="character-ul">
             <li class="character-fon">
@@ -104,8 +106,10 @@
                 width="264"
                 height="260"
               />
+              <div class="name-post">
               <h3 class="character-name">Mark Guerrero</h3>
               <p class="character-post">Product Designer</p>
+            </div>
             </li>
             <li class="character-fon">
               <img
@@ -115,8 +119,10 @@
                 width="264"
                 height="260"
               />
+              <div class="name-post">
               <h3 class="character-name">Tom Ford</h3>
               <p class="character-post">Frontend Developer</p>
+            </div>
             </li>
             <li class="character-fon">
               <img
@@ -126,8 +132,10 @@
                 width="264"
                 height="260"
               />
+              <div class="name-post">
               <h3 class="character-name">Camila Garcia</h3>
               <p class="character-post">Marketing</p>
+            </div>
             </li>
             <li class="character-fon">
               <img
@@ -137,16 +145,18 @@
                 width="264"
                 height="260"
               />
+              <div class="name-post">
               <h3 class="character-name">Daniel Wilson</h3>
               <p class="character-post">UI Designer</p>
+            </div>
             </li>
           </ul>
         </div>
       </section>
 
       <!--#4  Услуги Портфолио -->
-      <section>
-        <div class="container-portfolio">
+      <section class="section-portfolio">
+        <div class="container container-portfolio">
           <h2 class="title-portfolio">Our Portfolio</h2>
           <ul class="portfolio-ul">
             <li class="portfolio-fon">
@@ -227,6 +237,7 @@
     </main>
     <!-- #5 Футер -->
     <footer class="footer">
+      <div class="container">
       <a class="logo-footer" href="./index.html"
         >Web<span class="logo-part-footer">Studio</span></a
       >
@@ -234,6 +245,7 @@
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
+    </div>
     </footer>
   </body>
 </html>

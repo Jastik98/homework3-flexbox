@@ -29,6 +29,18 @@ ol {
   margin: 0;
   padding: 0;
 }
+.content-headera {
+  border-bottom: 1px solid #e7e9fc;
+}
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -37,7 +49,7 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  padding-left: 156px;
+  margin-right: 76px;
 }
 .logo-part {
   color: #2e2f42;
@@ -48,13 +60,16 @@ ol {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 .address-headera {
   font-style: normal;
   display: flex;
-  flex-direction: row;
   gap: 40px;
-  padding-left: 332px;
+}
+.teg-address {
+  margin-left: auto;
 }
 .address-contact {
   font-size: 16px;
@@ -70,9 +85,7 @@ ol {
 }
 .hero {
   background: #2e2f42;
-  width: 1440px;
-  height: 600px;
-  padding: 188px 472px 292px 472px;
+  padding: 188px 0;
 }
 .title {
   font-weight: 700;
@@ -81,8 +94,10 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-button {
   background: #4d5ae5;
@@ -94,15 +109,23 @@ ol {
   text-align: center;
   cursor: pointer;
   border-radius: 4px;
-  padding: 16px 0px;
-  width: 169px;
+  padding: 16px 32px;
+  min-width: 169px;
   height: 56px;
-  margin: 0 auto;
+  border: none;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-button:hover,
 .main-button:focus {
   background: #404bbf;
+}
+.content-discription h2 {
+  visibility: hidden;
+}
+.content-discription {
+  padding: 120px 0;
 }
 .title-list {
   font-weight: 500;
@@ -118,6 +141,9 @@ ol {
   letter-spacing: 0.02em;
   width: 264px;
 }
+.ul-items {
+  width: calc((100% - 72px) / 4);
+}
 .logo-ourteam {
   font-weight: 700;
   font-size: 36px;
@@ -127,10 +153,11 @@ ol {
   color: #2e2f42;
   text-transform: capitalize;
   margin-bottom: 72px;
-  padding-top: 120px;
 }
 .characters-developers {
   background: #f4f4fd;
+  padding: 120px 0;
+
 }
 .character-fon {
   background: #fff;
@@ -140,14 +167,8 @@ ol {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-.container-character-developers {
-  width: 1440px;
-  height: 732px;
-}
-.img-character {
-  background: #fff;
-  margin-bottom: 32px;
-}
+
+
 .character-name {
   font-weight: 500;
   font-size: 20px;
@@ -158,6 +179,9 @@ ol {
   text-align: center;
   margin-bottom: 8px;
 }
+.name-post{
+  padding: 32px 0;
+}
 .character-post {
   font-size: 16px;
   line-height: 150%;
@@ -166,11 +190,7 @@ ol {
 }
 .character-ul {
   display: flex;
-  flex-direction: row;
   gap: 24px;
-  padding-bottom: 120px;
-  margin: 0 auto;
-  max-width: 1128px;
 }
 
 .title-portfolio {
@@ -181,18 +201,16 @@ ol {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
-.portfolio-fon {
-  width: 360px;
-  height: 420px;
-  object-fit: cover;
-}
+
 .name-portfolio {
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .name-portfolio-description {
   font-size: 16px;
@@ -200,17 +218,12 @@ ol {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.container-portfolio {
-  width: 1128px;
-  height: 1000px;
-  margin: 120px auto;
-}
 .portfolio-ul {
   display: flex;
   flex-wrap: wrap-reverse;
   gap: 24px;
   flex-direction: row-reverse;
-  margin-top: 72px;
+  row-gap: 48px;
 }
 
 .logo-footer {
@@ -221,6 +234,8 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-part-footer {
   color: #f4f4fd;
@@ -231,30 +246,20 @@ ol {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
-  margin-top: 16px;
 }
 .hero-contant {
-  width: 496px;
-  margin: 0 auto;
+  max-height: 600px;
 }
-.container-header {
-  height: 72px;
-  padding-top: 24px;
-  display: flex;
-  flex-direction: row;
-}
+
 .nav-header {
   display: flex;
+  align-items: center;
 }
 .flex-headera {
-  padding-left: 76px;
   display: flex;
-  flex-direction: row;
   gap: 40px;
 }
 .container-under-hero {
-  margin: 120px auto;
-  max-width: 1128px;
   display: flex;
   gap: 24px;
 }
@@ -263,11 +268,12 @@ ol {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 360px;
-  height: 120px;
+}
+.section-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .footer {
   background: #2e2f42;
-  padding: 100px 1020px 100px 156px;
-  max-width: 100%;
+  padding: 100px 0;
 }
